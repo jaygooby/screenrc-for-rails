@@ -21,6 +21,8 @@ hardstatus alwayslastline
 hardstatus string '%{= kG}%{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}'
 
 # now the meat. Start four named windows, one for mongrel, one for console, one for mysql and a bash
+# to switch windows, press ctrl-g and the number. So ctrl-g 2 for window 2. To toggle back and forth
+# between current and previous window, it's ctrl-g twice
 screen -t "mongrel" 0 
 stuff "./script/server\012"
 
